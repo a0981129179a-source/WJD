@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> WJD </title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- LightGallery -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"> WUJUNDE® </div>
+    <ul class="menu">
+      <li><a href="#home">首頁</a></li>
+      <li><a href="#services">服務</a></li>
+      <li><a href="#portfolio">作品</a></li>
+      <li><a href="#contact">聯絡</a></li>
+      <li><a href="https://github.com/yourname" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/yourname" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div id="particles-js"></div>
+    <div class="hero-overlay">
+      <h1>WJD</h1>
+      <p>Minimal. Precise. Timeless.</p>
+      <p>Crafted with Intent.</p>
+      <p>Design Beyond Form.</p>
+      <p>接案網站設計 / 前端製作</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">聯絡我</button>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>我的服務</h2>
+    <div class="cards">
+      <div class="card"><i class="fas fa-laptop-code fa-2x"></i><p>形象網站設計</p></div>
+      <div class="card"><i class="fas fa-mobile-alt fa-2x"></i><p>RWD 響應式網站</p></div>
+      <div class="card"><i class="fas fa-paint-brush fa-2x"></i><p>前端切版製作</p></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <h2>我的作品</h2>
+    <div class="projects" id="lightgallery">
+      <a href="portfolio1.jpg"><div class="project">
+        <img src="portfolio1.jpg" alt="作品1">
+        <h3>個人形象網站</h3>
+        <p>HTML / CSS / JS</p>
+      </div></a>
+      <a href="portfolio2.jpg"><div class="project">
+        <img src="portfolio2.jpg" alt="作品2">
+        <h3>商業網站示範</h3>
+        <p>RWD 響應式設計</p>
+      </div></a>
+      <a href="portfolio3.jpg"><div class="project">
+        <img src="portfolio3.jpg" alt="作品3">
+        <h3>接案展示頁</h3>
+        <p>前端切版</p>
+      </div></a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>聯絡我</h2>
+    <p>有合作需求，歡迎填寫下方表單</p>
+    <form>
+      <input type="text" placeholder="您的姓名">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="請簡單說明需求"></textarea>
+      <button type="submit">送出訊息</button>
+    </form>
+    <button onclick="toggleText()">顯示更多資訊</button>
+    <p id="secret" style="display:none;">我會在 1–2 天內回覆您的訊息！</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Jim Design. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://github.com/yourname" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/%E5%85%89-%E6%99%82-b85aab3b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
